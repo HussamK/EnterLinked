@@ -15,26 +15,6 @@ import { NavigationContainer } from '@react-navigation/native';
 
 const RootStack = createStackNavigator();
 
-// const App = () => {
-//   const [user, setUser] = useState(null);
-//   const [initializing, setInitializing] = useState(true);
-//   const [completedOnboarding, setCompletedOnboarding] = useState(false);
-
-//   return (
-//     <NavigationContainer>
-//       <RootStack.Navigator screenOptions={{ headerShown: (false) }}>
-//             <RootStack.Screen
-//               name="Main"
-//               component={Tabs}
-//               options={{ headerShown: false }}
-//             />
-//       </RootStack.Navigator>
-//     </NavigationContainer>
-//   );
-// };
-
-// export default App;
-
 const App = () => {
   const [user, setUser] = useState(null);
   const [initializing, setInitializing] = useState(true);
