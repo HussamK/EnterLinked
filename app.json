@@ -30,6 +30,18 @@
     "extra": {
       "eas": {
         "projectId": "45ba26f8-deab-471e-95e1-06fb0436e338"
+      },
+      "babel": {
+        "plugins": [
+          ["module:react-native-dotenv", {
+            "moduleName": "@env",
+            "path": ".env",
+            "blacklist": null,
+            "whitelist": null,
+            "safe": false,
+            "allowUndefined": true
+          }]
+        ]
       }
     },
     "owner": "bean-machine"
