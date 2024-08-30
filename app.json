@@ -2,7 +2,7 @@
   "expo": {
     "name": "EnterLinked",
     "slug": "EnterLinked",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -11,9 +11,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.beanmachine.EnterLinked"
@@ -33,14 +31,17 @@
       },
       "babel": {
         "plugins": [
-          ["module:react-native-dotenv", {
-            "moduleName": "@env",
-            "path": ".env",
-            "blacklist": null,
-            "whitelist": null,
-            "safe": false,
-            "allowUndefined": true
-          }]
+          [
+            "module:react-native-dotenv",
+            {
+              "moduleName": "@env",
+              "path": ".env",
+              "blacklist": null,
+              "whitelist": null,
+              "safe": false,
+              "allowUndefined": true
+            }
+          ]
         ]
       }
     },

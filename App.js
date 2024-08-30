@@ -2,17 +2,31 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
 import React, { useState, useEffect } from "react";
 import { onAuthStateChanged } from "firebase/auth";
-import { FIREBASE_AUTH, FIRESTORE_DB } from "../EnterLinked/firebaseConfig";
+import {
+  FIREBASE_APP,
+  FIREBASE_AUTH,
+  FIRESTORE_DB,
+  FIREBASE_STORAGE,
+} from "./firebaseConfig";
 import { doc, getDoc } from "firebase/firestore";
-import OnboardingContext, {
-  OnboardingProvider,
-} from "../EnterLinked/context/OnboardingContext";
-import OnboardingNavigator from "../EnterLinked/components/login_signup/OnboardingStack";
-import Tabs from "../EnterLinked/components/Tabs";
-import { UserProvider } from "../EnterLinked/context/UserContext";
-import { AuthContext } from "../EnterLinked/context/AuthContext";
-import { FollowProvider } from "../EnterLinked/context/FollowingContext";
-import AuthStack from "../EnterLinked/components/AuthStack";
+// import OnboardingContext, {
+//   OnboardingProvider,
+// } from "../EnterLinked/context/OnboardingContext";
+import OnboardingContext from "./context/OnboardingContext";
+import { OnboardingProvider } from "./context/OnboardingContext";
+
+// import OnboardingNavigator from "../EnterLinked/components/login_signup/OnboardingStack";
+import OnboardingNavigator from "./components/login_signup/OnboardingStack";
+// import Tabs from "../EnterLinked/components/Tabs";
+import Tabs from "./components/Tabs";
+// import { UserProvider } from "../EnterLinked/context/UserContext";
+import { UserProvider } from "./context/UserContext";
+// import { AuthContext } from "../EnterLinked/context/AuthContext";
+import { AuthContext } from "./context/AuthContext";
+// import { FollowProvider } from "../EnterLinked/context/FollowingContext";
+import { FollowProvider } from "./context/FollowingContext";
+// import AuthStack from "../EnterLinked/components/AuthStack";
+import { AuthStack } from "./components/AuthStack";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
 
